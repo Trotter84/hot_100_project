@@ -1,2 +1,6 @@
 <h1>Billboards: Top 100</h1>
 
+
+<% @billboards.each do |billboard| %>
+  <%= link_to billboard.name, billboard, class: 'ui secondary button'%>
+<% end %>

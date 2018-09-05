@@ -1,2 +1,15 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<div class="ui card">
+  <div class="content">
+    <p class="header">
+      <%= @artist %>
+    </p>
+    </div>
+    <div class="description">
+      <%= @artist.song %>
+    </div>
+  </div>
+  <div class="extra content">
+    <%= link_to 'Edit', edit_artist_path(@artist) %> |
+    <%= link_to 'Back', artists_path %>
+  </div>
+</div>

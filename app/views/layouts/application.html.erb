@@ -9,8 +9,10 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <div>
-    <%= render partial: 'layouts/navbar' %>
-    <%= yield %>
-  </div>
+  <body>
+    <div class="ui container">
+      <%= render partial: 'layouts/navbar' %>
+      <%= yield %>
+    </div>
+  </body>
 </html>
