@@ -1,5 +1,7 @@
 {
   "name": "hot_100_project",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "nodemon": "^1.18.4"
+  }
 }

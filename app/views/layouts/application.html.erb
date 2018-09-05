@@ -9,7 +9,8 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
+  <div>
+    <%= render partial: 'layouts/navbar' %>
     <%= yield %>
-  </body>
+  </div>
 </html>
