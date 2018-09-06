@@ -43,7 +43,7 @@ class ArtistsController < ApplicationController
   private
   
     def set_artist
-      @artist = Artist.find(params(:id))
+      @artist = Artist.find(params[:id])
     end
 
     def artist_params

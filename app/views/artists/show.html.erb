@@ -1,15 +1,12 @@
-<div class="ui card">
-  <div class="content">
-    <p class="header">
-      <%= @artist %>
-    </p>
-    </div>
-    <div class="description">
-      <%= @artist.song %>
-    </div>
-  </div>
-  <div class="extra content">
-    <%= link_to 'Edit', edit_artist_path(@artist) %> |
-    <%= link_to 'Back', artists_path %>
-  </div>
-</div>
+
+<h1><%= @artist.name %></h1>
+<hr>
+<%= link_to 'Edit', edit_artist_path(@artist) %> |
+<%= link_to 'Back', artists_path %> |
+<%= link_to 'Delete Artist', artist_path, method: :delete %>
+<hr>
+<h3>Songs</h3>
+
+<% @artist.songs.each do |song| %>
+  <p><%= song.name %></p>
+<% end %>
