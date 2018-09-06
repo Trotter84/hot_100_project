@@ -4,10 +4,12 @@
 <%= link_to 'Create new artist', new_artist_path %>
 <br>
 
+<div class="artist-box">
 <% @artists.each do |artist| %>
-  <%= link_to artist.name, artist_path(artist) %>
+  <%= link_to artist.name, artist_path(artist), class: "artist-name" %>
   <br>
 <% end %>
+</div>
 
 
 <!--<h1 class="ui header">Artists</h1>

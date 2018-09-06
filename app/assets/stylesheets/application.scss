@@ -22,3 +22,24 @@ body {
 .button {
   size: 50px;
 }
+
+.artist-name {
+  color: white;
+  font-size: 30px;
+}
+
+.artist-name:hover {
+  color: white;
+  font-size: 29px;
+}
+
+.artist-name:active {
+  color: white;
+  font-size: 31px;
+}
+
+.artist-box {
+  display: block;
+  align-items: center;
+  align-content: space-between;
+}
