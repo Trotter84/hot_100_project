@@ -24,17 +24,17 @@ body {
 }
 
 .artist-name {
-  color: white;
+  color: black;
   font-size: 30px;
 }
 
 .artist-name:hover {
-  color: white;
+  color: black;
   font-size: 29px;
 }
 
 .artist-name:active {
-  color: white;
+  color: black;
   font-size: 31px;
 }
 
@@ -42,4 +42,10 @@ body {
   display: block;
   align-items: center;
   align-content: space-between;
+}
+
+.white {
+  background-color: white;
+  border-radius: 5%;
+  height: 100%;
 }
