@@ -1,13 +1,6 @@
 class SongsController < ApplicationController
   before_action :set_artist
-  before_action :set_song, except: [:index, :create, :new]
-
-  def index
-    @songs = @artist.songs
-  end
-
-  def show
-  end
+  before_action :set_song, except: [:create, :new]
 
   def new
     @song = @artist.songs.new

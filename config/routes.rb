@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :billboards
 
   resources :artists do
-    resources :songs
+    resources :songs, except: [:index, :show]
   end
 end
