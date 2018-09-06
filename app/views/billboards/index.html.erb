@@ -1,8 +1,11 @@
-<h1 class="main-logo">
+<h1 class="title">
   Billboards: Top 100
 </h1>
+<div class="button-top">
 <%= link_to 'New Billboard', new_billboard_path, class: 'ui button primary' %>
 <br>
+<div class="ui divided list">
 <% @billboards.each do |billboard| %>
   <%= link_to billboard.name, billboard, class: 'ui secondary button'%>
+</div>
 <% end %>

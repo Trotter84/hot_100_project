@@ -7,9 +7,42 @@ body {
   background-color: black;
 }
 
-.main-logo {
+.title {
   font-size: 100px;
-  text-shadow: 2, 1, 3, .5;
+  text-shadow: 3px 3px #373732;
   color: #B10635;
 }
 
+<<<<<<< HEAD
+=======
+.button-top {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+}
+
+.button {
+  size: 50px;
+}
+
+.artist-name {
+  color: white;
+  font-size: 30px;
+}
+
+.artist-name:hover {
+  color: white;
+  font-size: 29px;
+}
+
+.artist-name:active {
+  color: white;
+  font-size: 31px;
+}
+
+.artist-box {
+  display: block;
+  align-items: center;
+  align-content: space-between;
+}
+>>>>>>> 883008c60355e92f6046a85b0868fce693d85295
