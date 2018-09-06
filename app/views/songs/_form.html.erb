@@ -6,7 +6,7 @@
   <br>
 
   <%= f.label :billboard_id %>
-  <%= f.text_field :billboard_id %>
+  <%= f.select :billboard_id, [['No Billboard', nil]] + @billboards.collect { |b| [b.name, b.id] } %>
 
   <br>
   
