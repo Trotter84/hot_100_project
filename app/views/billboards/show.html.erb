@@ -8,15 +8,14 @@
     </tr>
   </thead>
   <tbody>
+  <% num = 1 %>
+  <% @billboard.songs.each do |song| %>
     <tr>
-      <td>1</td>
-      <td>Gingerbread Drummer</td>
-      <td>FlipSwitch</td>
+      <td><%= num %></td>
+      <td><%= song.name %></td>
+      <td><%= song.artist.name %></td>
     </tr>
-    <tr>
-      <td>2</td>
-      <td>The Hat Song</td>
-      <td>Jank</td>
-    </tr>
+    <% num += 1 %>
+  <% end %>
   </tbody>
 </table>
