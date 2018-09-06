@@ -7,8 +7,18 @@ body {
   background-color: black;
 }
 
-.main-logo {
+.title {
   font-size: 100px;
-  text-shadow: 2, 1, 3, .5;
+  text-shadow: 3px 3px #373732;
   color: #B10635;
+}
+
+.button-top {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+}
+
+.button {
+  size: 50px;
 }
