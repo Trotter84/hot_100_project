@@ -1,3 +1,8 @@
+<h1><%= @billboard.name %></h1>
+<hr>
+<%= link_to 'Edit Billboard', edit_billboard_path(@billboard.id) %> |
+<%= link_to 'Delete Billboard', billboard_path(@billboard.id), method: :delete %>
+<hr>
 
 <table class="ui striped table">
   <thead>
