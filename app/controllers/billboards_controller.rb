@@ -34,6 +34,10 @@ class BillboardsController < ApplicationController
   end
 
   def destroy
+    @billboard.songs.each do |song|
+      song.update(billboard_id: nil)
+    end
+
     @billboard.destroy
     redirect_to billboards_path
   end
