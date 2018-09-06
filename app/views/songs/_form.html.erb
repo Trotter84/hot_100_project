@@ -1,12 +1,12 @@
 <%= form_for [@artist, @song] do |f| %>
 
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, required: true %>
 
   <br>
 
-  <%= f.label :billboard_name %>
-  <%= f.text_field :billboard_name %>
+  <%= f.label :billboard_id %>
+  <%= f.select :billboard_id, [['No Billboard', nil]] + @billboards.collect { |b| [b.name, b.id] } %>
 
   <br>
   

@@ -3,6 +3,7 @@ class SongsController < ApplicationController
   before_action :set_song, except: [:create, :new]
 
   def new
+    @billboards = Billboard.all
     @song = @artist.songs.new
   end
 
@@ -17,6 +18,7 @@ class SongsController < ApplicationController
   end
 
   def edit
+    @billboards = Billboard.all
   end
 
   def update
