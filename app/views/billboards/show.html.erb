@@ -20,19 +20,14 @@
   <% @billboard.songs.order(likes: :desc).each do |song| %>
     <tr>
       <td><%= num %></td>
-      <td><%= song.likes %></td>
+      <td>
+        <%= link_to like_path @billboard, song do %>
+          <i class= "heart icon"></i> <%= song.likes %>
+        <% end %>
+      </td>
       <td><%= song.name %></td>
       <td><%= song.artist.name %></td>
       <td><%= link_to 'View Song Artist', artist_path(song.artist_id) %></td>
-      <td>
-        <%= link_to like_path @billboard, song do %>
-          <div class= "ui labeled button" tabindex="0">
-            <div class= "ui button">
-              <i class= "heart icon"></i>Like
-            </div>
-          </div>
-        <% end %>
-      </td>
     </tr>
     <% num += 1 %>
   </div>
