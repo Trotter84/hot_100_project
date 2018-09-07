@@ -1,5 +1,5 @@
 class SongsController < ApplicationController
-  before_action :set_artist
+  before_action :set_artist, except: [:like]
   before_action :set_song, except: [:create, :new]
 
   def new
@@ -32,6 +32,11 @@ class SongsController < ApplicationController
   def destroy
     @song.destroy
     redirect_to artist_path(@song.artist_id)
+  end
+
+  def like
+    @song.update({likes: @song.likes + 1})
+    redirect_to billboard_path(params[:billboard_id])
   end
 
   private
