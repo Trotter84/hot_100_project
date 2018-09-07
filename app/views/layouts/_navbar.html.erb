@@ -4,5 +4,6 @@
   <div class="right menu">
     <a href="https://www.google.com" class="item">Search</a>
     <a href="https://www.youtube.com/watch?v=2Q_ZzBGPdqE" class="item">Help</a>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "item" %>
   </div>
 </div>
