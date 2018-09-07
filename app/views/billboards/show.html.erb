@@ -12,7 +12,6 @@
       <th>Likes</th>
       <th>Song</th>
       <th>Artist</th>
-      <th>View</th>
     </tr>
   </thead>
   <tbody>
@@ -25,9 +24,16 @@
           <i class= "heart icon"></i> <%= song.likes %>
         <% end %>
       </td>
-      <td><%= song.name %></td>
-      <td><%= song.artist.name %></td>
-      <td><%= link_to 'View Song Artist', artist_path(song.artist_id) %></td>
+      <td>
+        <%= link_to artist_path(song.artist_id) do %>
+          <%= song.name %>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to artist_path(song.artist_id) do %>
+          <%= song.artist.name %>
+        <% end %>
+      </td>
     </tr>
     <% num += 1 %>
   </div>
